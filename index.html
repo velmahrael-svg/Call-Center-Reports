@@ -71,30 +71,30 @@ const CONFIG = {
   company:      "Mawingu Networks",
   department:   "Customer Success · Call Centre",
   reportMonth:  "May 2026",
-  reportPeriod: "1 – 14 May 2026",   // ← update end date each month
-  reportNote:   "MTD Report · 14 days",
+  reportPeriod: "1 – 18 May 2026",   // ← update end date each month
+  reportNote:   "MTD Report · 17 days",
 
   /* ─── CALL KPIs (top of report) ─────────────────────── */
   kpi: {
-    totalCalls:       12477,   // total inbound calls offered
-    answered:          9378,   // calls answered
-    droppedQueue:      3008,   // dropped on queue
-    droppedIVR:        6187,   // dropped on IVR
-    missed:              59,   // missed calls
-    abandonRate:         24,   // % abandon rate
+    totalCalls:       16669,   // total inbound calls offered
+    answered:          12363,   // calls answered
+    droppedQueue:      4196,   // dropped on queue
+    droppedIVR:        6736,   // dropped on IVR
+    missed:              73,   // missed calls
+    abandonRate:         25,   // % abandon rate
     missedCallRate:     0.5,   // % missed call rate
-    repeatCallRate:      49,   // % repeat calls
-    distinctCallers:   5578,   // unique callers
-    outboundTotal:    10614,   // total outbound calls
-    outboundAnswered:  5487,   // outbound answered
+    repeatCallRate:      51,   // % repeat calls
+    distinctCallers:   7047,   // unique callers
+    outboundTotal:    11300,   // total outbound calls
+    outboundAnswered:  5567,   // outbound answered
     outboundContact:   51.7,   // % contact rate (answered/total)
   },
 
   /* ─── TICKET KPIs ────────────────────────────────────── */
   ticketKpi: {
-    total:         6979,   // total tickets
-    repeatTickets:  889,   // repeat tickets
-    repeatPct:    12.74,   // % repeat tickets
+    total:         8842,   // total tickets
+    repeatTickets:  1256,   // repeat tickets
+    repeatPct:    14.20,   // % repeat tickets
     withinSLA:       84,   // % within SLA
     beyondSLA:       16,   // % beyond SLA
     avgClosure:      38,   // avg closure time (hours)
@@ -117,25 +117,30 @@ const CONFIG = {
     { date:"11 May", day:"Sun", calls:917, repeat:37 },
     { date:"12 May", day:"Mon", calls: 1150, repeat:38 },
     { date:"13 May", day:"Tue", calls: 923, repeat:31 },
-    { date:"14 May", day:"Wed", calls:  844, repeat:49 },  // partial day
+    { date:"14 May", day:"Wed", calls:  844, repeat:37 }, 
+    { date:"15 May", day:"Thu", calls:  1008, repeat:33 }, 
+    { date:"16 May", day:"Fri", calls:  844, repeat:36 }, 
+    { date:"17 May", day:"Sat", calls:  706, repeat:40 }, 
+      { date:"18 May", day:"Sun", calls:  1032, repeat:40 }, 
+   
   ],
 
   /* ─── INBOUND AGENTS ─────────────────────────────────── */
   agents: [
-    { name:"Samson",         inbound:1210, outgoing:5,   tickets:196, fcr:134 },
-    { name:"Johnson",        inbound:1110, outgoing:97,  tickets:701, fcr:0   },
-    { name:"Ann Wanjiru",    inbound: 754, outgoing:3,   tickets:292, fcr:149 },
-    { name:"Chero",          inbound: 701, outgoing:140, tickets:0,   fcr:0   },
-    { name:"Gethsamane",     inbound: 721, outgoing:104, tickets:389, fcr:236 },
-    { name:"Gladys Mwihaki", inbound: 681, outgoing:105, tickets:416, fcr:249 },
-    { name:"Joseph",         inbound: 550, outgoing:47,  tickets:364, fcr:188 },
-    { name:"Paul N",         inbound: 510, outgoing:44,  tickets:360, fcr:173 },
-    { name:"Faith",          inbound: 483, outgoing:54,  tickets:334, fcr:210 },
-    { name:"Mercy",          inbound: 429, outgoing:91,  tickets:363, fcr:231 },
-    { name:"Agnes",          inbound: 404, outgoing:25,  tickets:196, fcr:118 },
-    { name:"Grace",          inbound: 404, outgoing:267, tickets:244, fcr:159 },
-    { name:"R Burns",        inbound: 397, outgoing:78,  tickets:0,   fcr:0   },
-    { name:"Alexia Tisean",  inbound: 394, outgoing:74,  tickets:220, fcr:142 },
+    { name:"Samson",         inbound:1455, outgoing:8,   tickets:270, fcr:178 },
+    { name:"Johnson",        inbound:1256, outgoing:103,  tickets:701, fcr:0   },
+    { name:"Ann Wanjiru",    inbound: 890, outgoing:6,   tickets:312, fcr:160 },
+    { name:"Chero",          inbound: 859, outgoing:144, tickets:411,   fcr:0   },
+    { name:"Gethsamane",     inbound: 839, outgoing:109, tickets:451, fcr:269 },
+    { name:"Gladys Mwihaki", inbound: 839, outgoing:118, tickets:484, fcr:282 },
+    { name:"Joseph",         inbound: 838, outgoing:73,  tickets:526, fcr:265 },
+    { name:"Paul N",         inbound: 578, outgoing:45,  tickets:395, fcr:190 },
+    { name:"Faith",          inbound: 669, outgoing:65,  tickets:454, fcr:281 },
+    { name:"Mercy",          inbound: 757, outgoing:112,  tickets:592, fcr:370 },
+    { name:"Agnes",          inbound: 834, outgoing:31,  tickets:339, fcr:184 },
+    { name:"Grace",          inbound: 447, outgoing:416, tickets:290, fcr:183 },
+    { name:"R Burns",        inbound: 856, outgoing:101,  tickets:569,   fcr:0   },
+    { name:"Alexia Tisean",  inbound: 462, outgoing:206,  tickets:256, fcr:164 },
    
   ],
 
